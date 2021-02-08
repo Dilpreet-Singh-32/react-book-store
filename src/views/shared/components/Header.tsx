@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import '../userStyles.ts';
 import { Logo } from './Logo';
@@ -29,10 +30,10 @@ export const Header: React.FunctionComponent<HeaderProps> = () => {
               <nav className="mainmenu__nav">
                 <ul className="meninmenu d-flex justify-content-start">
                   <li className="drop with--one--item">
-                    <a href="index.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="drop">
-                    <a href="#">Shop</a>
+                    <Link to="/shop">Shop</Link>
                     <div className="megamenu mega03">
                       <ul className="item item03">
                         <li className="title">Shop Layout</li>
@@ -508,21 +509,7 @@ export const Header: React.FunctionComponent<HeaderProps> = () => {
               <nav className="mobilemenu__nav">
                 <ul className="meninmenu">
                   <li>
-                    <a href="index.html">Home</a>
-                    <ul>
-                      <li>
-                        <a href="index.html">Home Style Default</a>
-                      </li>
-                      <li>
-                        <a href="index-2.html">Home Style Two</a>
-                      </li>
-                      <li>
-                        <a href="index-3.html">Home Style Three</a>
-                      </li>
-                      <li>
-                        <a href="index-box.html">Home Box Style</a>
-                      </li>
-                    </ul>
+                    <Link to="/">Home</Link>
                   </li>
                   <li>
                     <a href="#">Pages</a>
@@ -572,7 +559,7 @@ export const Header: React.FunctionComponent<HeaderProps> = () => {
                     </ul>
                   </li>
                   <li>
-                    <a href="shop-grid.html">Shop</a>
+                    <Link to="/shop">Shop</Link>
                     <ul>
                       <li>
                         <a href="shop-grid.html">Shop Grid</a>
