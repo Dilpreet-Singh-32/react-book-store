@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
+import { Loading } from './views/shared/components';
 import { RotuesComponent } from './views/shared/routes';
 
 interface AppProps {}
@@ -8,7 +9,9 @@ interface AppProps {}
 const App: React.FunctionComponent<AppProps> = () => {
   return (
     <BrowserRouter>
-      <RotuesComponent />
+      <Suspense fallback={<Loading />}>
+        <RotuesComponent />
+      </Suspense>
     </BrowserRouter>
   );
 };

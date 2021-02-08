@@ -10,7 +10,7 @@ import {
 
 interface HomePageProps {}
 
-export const HomePage: React.FunctionComponent<HomePageProps> = () => {
+const HomePage: React.FunctionComponent<HomePageProps> = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
@@ -88,3 +88,5 @@ export const HomePage: React.FunctionComponent<HomePageProps> = () => {
     </div>
   );
 };
+
+export default HomePage;

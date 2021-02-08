@@ -1,12 +1,12 @@
-import React from 'react';
+import { lazy } from 'react';
 
-import { HomePage } from '../views/home';
-import { ShopPage } from '../views/shop';
+const HomePage = lazy(() => import('./home'));
+const ShopPage = lazy(() => import('./shop'));
 
 interface Route {
   path: string;
   exact?: boolean;
-  component: React.ComponentType<any>;
+  component: any;
 }
 
 const publicRoutes: Route[] = [
