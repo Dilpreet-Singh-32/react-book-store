@@ -740,7 +740,7 @@ a {
   background-position: center center;
 }
 .bg-image--2 {
-  /* background-image: url(assets/images/bg/2.jpg); */
+  background-image: url(../../../assets/images/bg/2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -770,7 +770,7 @@ a {
   background-position: center center;
 }
 .bg-image--7 {
-  /* background-image: url(assets/images/bg/7.jpg); */
+  background-image: url(../../../assets/images/bg/8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1245,8 +1245,9 @@ Elements Styles
   transition: all 300ms ease-in 0s;
 }
 .shopbtn::after {
-  /* background: rgba(0, 0, 0, 0) url('assets/images/icons/links_static.png') no-repeat
-    scroll 100% 50%; */
+  background: rgba(0, 0, 0, 0)
+    url('../../../assets/images/icons/links_static.png') no-repeat scroll 100%
+    50%;
   content: '';
   display: inline-block;
   height: 11px;
@@ -2423,8 +2424,8 @@ Header Styles
   position: relative;
 }
 .header__area .header__sidebar__right > li.setting__bar__icon > a {
-  background: transparent url('../../../assets/images/icons/icon_setting.png') no-repeat scroll
-    left center;
+  background: transparent url('../../../assets/images/icons/icon_setting.png')
+    no-repeat scroll left center;
   cursor: pointer;
   font-size: 0;
   height: 35px;
@@ -4053,8 +4054,8 @@ h3.widget-title-modal {
   text-transform: uppercase;
 }
 .slide .slider__content a.shopbtn::after {
-  /* background: rgba(0, 0, 0, 0) url('assets/images/icons/links_static8.png') repeat
-    scroll 100% 50%; */
+  background: rgba(0, 0, 0, 0)
+    url('../../../assets/images/icons/links_static8.png') repeat scroll 100% 50%;
   content: '';
   display: inline-block;
   height: 11px;

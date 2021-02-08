@@ -1,7 +1,7 @@
-import React, { useCallback, useState } from 'react';
+import React, { useState } from 'react';
 
 import '../userStyles.ts';
-import { Logo } from '../index';
+import { Logo } from './Logo';
 
 interface HeaderProps {}
 
@@ -13,7 +13,7 @@ export const Header: React.FunctionComponent<HeaderProps> = () => {
     : 'brown--color box-search-content search_active block-bg close__top';
 
   return (
-    <div className="wrapper" id="wrapper">
+    <>
       <header
         id="wn__header"
         className="header__area header__absolute sticky__header"
@@ -642,6 +642,6 @@ export const Header: React.FunctionComponent<HeaderProps> = () => {
           </span>
         </div>
       </div>
-    </div>
+    </>
   );
 };

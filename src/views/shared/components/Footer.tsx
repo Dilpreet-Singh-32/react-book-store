@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Logo } from '../index';
+import { Logo } from './Logo';
 
 interface FooterProps {}
 

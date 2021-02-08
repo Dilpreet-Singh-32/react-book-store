@@ -1,12 +1,12 @@
 import React from 'react';
 
 import './App.css';
-import { Home } from './views/home';
+import { HomePage } from './views/home';
 
 interface AppProps {}
 
 const App: React.FunctionComponent<AppProps> = () => {
-  return <Home />;
+  return <HomePage />;
 };
 
 export default App;
