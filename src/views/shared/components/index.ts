@@ -1,5 +1,5 @@
 export * from './Header';
 export * from './Footer';
 export * from './Slider';
-export * from './Logo';
-export * from './Loading';
+export * from './Slide';
+export * from './Banner';

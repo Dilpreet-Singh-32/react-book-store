@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Spinner } from '../';
+
 type DynamicImport = () => Promise<{
   default: React.ComponentType<any>;
 }>;
@@ -23,7 +25,7 @@ export const asyncComponent = (importComponent: DynamicImport) => {
     render() {
       const C: React.ComponentType<any> | null = this.state.component;
 
-      return C ? <C {...this.props} /> : null;
+      return C ? <C {...this.props} /> : <Spinner />;
     }
   };
 };

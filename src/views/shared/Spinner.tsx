@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../styles/loading.css';
+import './styles/spinner.css';
 
-export const Loading: React.FunctionComponent = () => {
+export const Spinner: React.FunctionComponent = () => {
   return (
     <>
       <div className="cssload-dots">

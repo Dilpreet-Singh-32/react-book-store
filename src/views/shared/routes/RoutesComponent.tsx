@@ -15,7 +15,7 @@ export const RotuesComponent: React.FunctionComponent<RoutesProps> = () => {
             key={route.path}
             path={route.path}
             exact={route.exact}
-            component={route.component}
+            component={asyncComponent(route.component)}
           />
         );
       })}

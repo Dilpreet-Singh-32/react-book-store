@@ -1,8 +1,3 @@
-import { lazy } from 'react';
-
-const HomePage = lazy(() => import('./home'));
-const ShopPage = lazy(() => import('./shop'));
-
 interface Route {
   path: string;
   exact?: boolean;
@@ -10,8 +5,8 @@ interface Route {
 }
 
 const publicRoutes: Route[] = [
-  { path: '/', exact: true, component: HomePage },
-  { path: '/shop', exact: true, component: ShopPage },
+  { path: '/', exact: true, component: () => import('./home') },
+  { path: '/shop', exact: true, component: () => import('./shop') },
 ];
 
 export default { publicRoutes };

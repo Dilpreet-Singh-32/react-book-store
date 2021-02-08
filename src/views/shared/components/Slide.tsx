@@ -8,11 +8,14 @@ interface SlideProps {
   hotLabel: 'BEST SALLER' | 'HOT';
   originalPrice: number;
   salesPrice: number;
+  classes?: string;
 }
 
-export const Slide: React.FunctionComponent<SlideProps> = () => {
+export const Slide: React.FunctionComponent<SlideProps> = ({ classes }) => {
+  const itemClasses = classes ? classes : 'product product__style--3 item';
+
   return (
-    <div className="product product__style--3 item">
+    <div className={itemClasses}>
       <div className="product__thumb">
         <a className="first__img" href="single-product.html">
           <img src={img1} alt="product image" />

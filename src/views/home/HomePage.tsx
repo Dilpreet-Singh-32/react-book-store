@@ -25,7 +25,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = () => {
 
   return (
     <div className="wrapper" id="wrapper">
-      <Header />
+      <Header home />
 
       <div className="slider-area brown__nav slider--15 slide__activation slide__arrow01">
         <div className="slide animation__style10 bg-image--7 fullscreen align__center--left">

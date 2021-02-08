@@ -764,7 +764,7 @@ a {
   background-position: center center;
 }
 .bg-image--6 {
-  /* background-image: url(assets/images/bg/6.jpg); */
+  background-image: url(../../../assets/images/bg/5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -7771,7 +7771,7 @@ a.checkout__title {
   background: red none repeat scroll 0 0;
 }
 .list__view .content .cart__action li.wishlist a {
-  /* background: white url('assets/images/icons/wishlist.png') no-repeat scroll -6% 0; */
+  background: white url('../../../assets/images/icons/wishlist.png') no-repeat scroll -6% 0;
 }
 .list__view .content .cart__action li.wishlist a:hover {
   background-position: 108% 0;
@@ -7779,7 +7779,7 @@ a.checkout__title {
   background-color: red;
 }
 .list__view .content .cart__action li.compare a {
-  /* background: white url('assets/images/icons/compare.png') no-repeat scroll -6% 0; */
+  background: white url('../../../assets/images/icons/compare.png') no-repeat scroll -6% 0;
 }
 .list__view .content .cart__action li.compare a:hover {
   background-position: 108% 0;

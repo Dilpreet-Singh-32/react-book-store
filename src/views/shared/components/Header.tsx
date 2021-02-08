@@ -1,24 +1,27 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import { Logo } from '../';
 import '../userStyles.ts';
-import { Logo } from './Logo';
 
-interface HeaderProps {}
+interface HeaderProps {
+  home?: boolean;
+}
 
-export const Header: React.FunctionComponent<HeaderProps> = () => {
+export const Header: React.FunctionComponent<HeaderProps> = ({ home }) => {
   const [searching, setSearching] = useState(false);
   const toggleSearching = () => setSearching(!searching);
+
+  const headerClasses = home
+    ? 'header__area header__absolute sticky__header'
+    : 'oth-page header__area header__absolute sticky__header';
   const searchModalClasses = searching
     ? 'brown--color box-search-content search_active block-bg close__top is-visible'
     : 'brown--color box-search-content search_active block-bg close__top';
 
   return (
     <>
-      <header
-        id="wn__header"
-        className="header__area header__absolute sticky__header"
-      >
+      <header id="wn__header" className={headerClasses}>
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-6 col-sm-6 col-6 col-lg-2">
